@@ -10,23 +10,26 @@
 */
 
 :root {
-    --navbar-height : 8vh
+    --navbar-height : 8vh;
+    color: #f0f0f0;
 }
 
 body {
-    padding: 0 10vw;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181818;
 }
 
 .centered-container {
+    padding: 0 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 nav {
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 
     position: fixed;
@@ -35,12 +38,63 @@ nav {
     width: 100vw;
     height: var(--navbar-height);
 
-    background-color: red;
+    background-color: #181818;
     z-index: 1;
 }
 
 nav > a {
+    position: relative;
     font-size: 4vmin;
+    text-decoration: none;
+    color: #f0f0f0;
+    text-align: center;
+    width: 33%;
+}
+
+nav > a:not(:last-child)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0.2vw;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+}
+
+nav::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 0.5vh;
+    background-color: #f0f0f0;
+}
+
+section,
+article {
+    position: relative;
+}
+
+section:not(:last-of-type)::after,
+article::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3vh;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+}
+
+section {
+    position: relative;
 }
 
 .hero-image {
@@ -50,4 +104,41 @@ nav > a {
 
 .hero-text > h1 {
     font-size: 9.5vmin;
+}
+
+footer {
+    background-color: #181818;
+    color: #f0f0f0;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer ul li a {
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+footer ul li a:visited {
+    color: #666;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #f0f0f0;
 }

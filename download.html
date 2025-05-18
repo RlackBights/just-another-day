@@ -20,6 +20,51 @@
     </nav>
 
     <!-- Download page body -->
+
+    <section class="hero-image">
+        <header class="hero-text centered-container">
+            <h1>Download</h1>
+        </header>
+    </section>
+
+    <div>
+        <form action="mailto:hunor.n.b@gmail.com" method="post" enctype="text/plain">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required maxlength="20"><br><br>
+
+            <label for="response">How did you find out about this game:</label><br>
+            <textarea id="response" name="response" rows="4" cols="40" required maxlength="184"></textarea>
+
+            <fieldset>
+                <legend>Verzió (Version):</legend>
+                <input type="radio" id="demo" name="version" value="demo" checked>
+                <label for="demo">Demo</label><br>
+
+                <input type="radio" id="release" name="version" value="release" disabled>
+                <label for="release">Release (unavailable)</label>
+            </fieldset>
+
+            <input type="checkbox" id="share" name="share">
+            <label for="share">Share high score on the website</label><br><br>
+
+            <div>
+                <button type="submit">Download</button>
+                <button type="reset">Reset</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>Follow or learn more:</p>
+        <ul>
+            <li><a href="https://github.com/rlackbights" target="_blank">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@petrichor-dev" target="_blank">YouTube</a></li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        </ul>
+    </footer>
     
 </body>
 </html>

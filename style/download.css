@@ -1,0 +1,74 @@
+/*
+    8888888b.                                  888                        888 
+    888  "Y88b                                 888                        888 
+    888    888                                 888                        888 
+    888    888  .d88b.  888  888  888 88888b.  888  .d88b.   8888b.   .d88888 
+    888    888 d88""88b 888  888  888 888 "88b 888 d88""88b     "88b d88" 888 
+    888    888 888  888 888  888  888 888  888 888 888  888 .d888888 888  888 
+    888  .d88P Y88..88P Y88b 888 d88P 888  888 888 Y88..88P 888  888 Y88b 888 
+    8888888P"   "Y88P"   "Y8888888P"  888  888 888  "Y88P"  "Y888888  "Y88888 
+*/
+
+body {
+    background-image: url('../source/Untitled\ \(1\).webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.hero-image {
+    height: fit-content;
+    margin-bottom: 0;
+}
+
+form {
+    width: min-content;
+    font-size: 2vmin;
+    border: 2px solid white;
+    padding: 3vmin;
+    border-radius: 1rem;
+    background-color: #181818;
+}
+
+form > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vmin 0;
+}
+
+input[type=text],
+input[type=checkbox],
+textarea {
+    background-color: #181818;
+    outline: none;
+    border: 2px solid #f0f0f0;
+    color: #f0f0f0;
+    padding: 0.6vmin 1vmin;
+}
+
+fieldset {
+    float: right;
+}
+
+input[type=checkbox] {
+    scale: 1.3;
+}
+
+button {
+    outline: none;
+    background-color: #181818;
+    color: #f0f0f0;
+    border: 2px solid #f0f0f0;
+    font-size: 2.25vmin;
+    font-weight: bold;
+    padding: 0.5vmin 1vmin;
+}
+
+body > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63vh;
+}

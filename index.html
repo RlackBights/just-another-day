@@ -27,7 +27,7 @@
         </header>
     </section>
 
-    <section class="description">
+    <article class="description">
         <h2>About the project</h2>
         <p>Welcome to <strong>Just Another Day</strong>, a <strong>survival horror game</strong> set in a deceptively calm pixelated forest, where the line between <strong>tranquility</strong> and <strong>nightmare</strong> blurs with <i>every passing hour</i>.</p>
         <p>By <strong>day</strong>, the world is <strong>vibrant and inviting</strong>—sunlight filters through the canopy, birds chirp in harmony, and the river babbles peacefully nearby. You'll <strong>forage for supplies, build shelter</strong>, and maybe even start to feel safe. But don’t be fooled. This forest remembers, and it watches.</p>
@@ -39,14 +39,14 @@
             <h3>Dev Note</h3>
             <p>This project was inspired by the psychological tension of games like <em>Subnautica</em> and <em>Don't Starve Together</em>.</p>
         </aside>
-    </section>
+    </article>
 
     <section class="video-container centered-container">
         <h2>Game Trailer</h2>
-        <video width="640" height="360" controls loop src="source/A NAV.mp4"></video>
+        <video width="640" height="360" controls loop src="source/A_NAV.mp4"></video>
     </section>
 
-    <section class="table-container centered-container">
+    <div class="table-container centered-container">
         <details open>
             <summary>
                 Players and High scores
@@ -104,7 +104,25 @@
             </table>
         </details>
         
-    </section>
+    </div>
 
+    <!-- Footer -->
+
+    <footer>
+        <p>Follow or learn more:</p>
+        <ul>
+            <li><a href="https://github.com/rlackbights" target="_blank">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@petrichor-dev" target="_blank">YouTube</a></li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        </ul>
+    </footer>
+
+    <!-- DVD to help user experience -->
+
+    <div id="DVD" style="top: 0; left: 0;"> <!-- Since Js mainly interacts with inline styling, I need to set some default values -->
+        <img src="./source/DVD_logo.png" alt="An image of the DVD logo">
+    </div>
+
+    <script src="./script/script.js"></script>
 </body>
 </html>
