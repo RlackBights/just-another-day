@@ -1,0 +1,58 @@
+/*
+    888    888                                 
+    888    888                                 
+    888    888                                 
+    8888888888  .d88b.  88888b.d88b.   .d88b.  
+    888    888 d88""88b 888 "888 "88b d8P  Y8b 
+    888    888 888  888 888  888  888 88888888 
+    888    888 Y88..88P 888  888  888 Y8b.     
+    888    888  "Y88P"  888  888  888  "Y8888 
+*/
+
+.description {
+    width: 100%;
+    height: 100vh;
+}
+
+.description > h2 {
+    font-size: 6vmin;
+}
+
+.description > p {
+    font-size: 2.25vmin;
+    padding: 0 5vw;
+}
+
+.description > aside {
+    padding: 0 5vw;
+}
+
+.video-container {
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.video-container > h2 {
+    font-size: 6vmin;
+}
+
+.table-container {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.table-container summary {
+    text-align: center;
+}
+
+.table-container table {
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    border: 1px solid gray;
+    padding: 0.5vmin 1vmin;
+    font-size: 2.5vmin;
+}

@@ -15,6 +15,7 @@
 
 body {
     padding: 0 10vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .centered-container {
@@ -35,6 +36,7 @@ nav {
     height: var(--navbar-height);
 
     background-color: red;
+    z-index: 1;
 }
 
 nav > a {
@@ -42,25 +44,10 @@ nav > a {
 }
 
 .hero-image {
-    margin-top: var(--navbar-height);
+    margin: var(--navbar-height) 0;
     height: calc(100vh - (2 * var(--navbar-height)));
 }
 
 .hero-text > h1 {
     font-size: 9.5vmin;
-}
-
-/*
-    888    888                                 
-    888    888                                 
-    888    888                                 
-    8888888888  .d88b.  88888b.d88b.   .d88b.  
-    888    888 d88""88b 888 "888 "88b d8P  Y8b 
-    888    888 888  888 888  888  888 88888888 
-    888    888 Y88..88P 888  888  888 Y8b.     
-    888    888  "Y88P"  888  888  888  "Y8888 
-*/
-
-.video-container {
-    overflow: hidden;
 }
