@@ -1,0 +1,42 @@
+@media print {
+    * {
+        color: black !important;
+        background-color: white !important;
+        height: fit-content !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border:  none !important;
+    }
+
+    nav,
+    .content-button,
+    #DVD,
+    .video-container ,
+    footer,
+    button {
+        display: none !important;
+    }
+
+    .table-container th,
+    .table-container td {
+        border: 1px solid black !important;
+    }
+
+    .profile {
+        flex-direction: row;
+        column-gap: 2vw;
+    }
+
+    img {
+        width: 20vw;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        border: 2px solid black !important;
+    }
+}

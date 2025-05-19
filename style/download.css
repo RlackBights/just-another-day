@@ -23,11 +23,12 @@ body {
 
 form {
     width: min-content;
-    font-size: 2vmin;
+    font-size: 2vh;
     border: 2px solid white;
     padding: 3vmin;
     border-radius: 1rem;
     background-color: #181818;
+    max-width: 90%;
 }
 
 form > div {
@@ -48,6 +49,11 @@ textarea {
     padding: 0.6vmin 1vmin;
 }
 
+textarea {
+    width: 20vw;
+    min-width: 95%;
+}
+
 fieldset {
     float: right;
 }
@@ -61,7 +67,7 @@ button {
     background-color: #181818;
     color: #f0f0f0;
     border: 2px solid #f0f0f0;
-    font-size: 2.25vmin;
+    font-size: 2.25vh;
     font-weight: bold;
     padding: 0.5vmin 1vmin;
 }

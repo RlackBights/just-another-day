@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/print_view.css">
 
     <title>Just Another Day - Home</title>
 </head>
 <body>
+
+    <a href="#content-start" class="content-button">Jump to content</a>
 
     <!-- Navbar -->
 
@@ -21,7 +24,7 @@
 
     <!-- Home page body -->
 
-    <section class="hero-image centered-container">
+    <section id="content-start" class="hero-image centered-container">
         <header class="hero-text">
             <h1>Just Another Day</h1>
         </header>
@@ -43,7 +46,7 @@
 
     <section class="video-container centered-container">
         <h2>Game Trailer</h2>
-        <video width="640" height="360" controls loop src="source/A_NAV.mp4"></video>
+        <video width="640" height="360" controls loop src="./source/A_NAV.mp4" poster="./source/Screenshot_20250519_131236.png"></video>
     </section>
 
     <div class="table-container centered-container">
@@ -115,6 +118,7 @@
             <li><a href="https://www.youtube.com/@petrichor-dev" target="_blank">YouTube</a></li>
             <li><a href="https://www.google.com" target="_blank">Google</a></li>
         </ul>
+        <button class="high-contrast-button" onclick="EnableHighContrast()">High Contrast Mode</button>
     </footer>
 
     <!-- DVD to help user experience -->
@@ -124,5 +128,6 @@
     </div>
 
     <script src="./script/script.js"></script>
+    <script src="./script/high_contrast.js"></script>
 </body>
 </html>

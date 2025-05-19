@@ -14,12 +14,13 @@ body {
 }
 
 .hero-image {
+    margin: 0;
     background-image: url("../source/SissyPussy.webp");
 }
 
 .description {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .description > h2 {
@@ -27,7 +28,7 @@ body {
 }
 
 .description > p {
-    font-size: 2.25vmin;
+    font-size: 2.25vh;
     padding: 0 5vw;
 }
 
@@ -36,7 +37,7 @@ body {
 }
 
 .video-container {
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
     flex-direction: column;
 }
@@ -79,6 +80,6 @@ body {
 }
 
 #DVD > img {
-    width: 10vw;
+    width: 15vh;
     height: auto;
 }

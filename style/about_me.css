@@ -16,6 +16,10 @@ body {
     margin: 0;
 }
 
+.hero-image {
+    flex-direction: column;
+}
+
 .profile {
     display: flex;
     flex-direction: row;
@@ -23,13 +27,24 @@ body {
     align-items: center;
     border: 2px solid #f0f0f0;
     background-color: #181818;
+    padding: 2vmin;
 }
 
-.profile > img {
-    width: 30%;
+.profile img {
     filter: blur(1px) saturate(5) hue-rotate(90deg);
 }
 
-.profile > p {
+.profile figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+.profile p {
     padding-left: 2vw;
+}
+
+@media (max-width:800px) {
+    .profile {
+        flex-direction: column;
+    }
 }

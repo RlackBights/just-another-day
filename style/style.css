@@ -19,6 +19,10 @@ body {
     background-color: #181818;
 }
 
+.content-button {
+    color: transparent;
+}
+
 .centered-container {
     padding: 0 10vw;
     display: flex;
@@ -85,7 +89,7 @@ article::after {
     content: "";
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -1.5vh;
     left: 0;
     width: 100%;
     height: 0.3vh;
@@ -104,6 +108,7 @@ section {
 
 .hero-text > h1 {
     font-size: 9.5vmin;
+    text-align: center;
 }
 
 footer {
@@ -141,4 +146,15 @@ footer ul li a:visited {
 
 footer ul li a:hover {
     color: #f0f0f0;
+}
+
+footer .high-contrast-button {
+    margin-top: 1vh;
+    font-size: 2vh;
+    padding: 0.5vmin 1vmin;
+    background-color: #181818;
+    outline: none;
+    border: 2px solid #f0f0f0;
+    color: #f0f0f0;
+    font-weight: bold;
 }
